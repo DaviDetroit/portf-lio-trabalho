@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio pessoal </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="botoes-navegacao"> <!--Cria a classe de botão-->
+                <a href="#home" class="botao">Home</a>
+                <a href="#sobre-mim" class="botao">Sobre Mim</a>
+                <a href="#trabalhos" class="botao">Trabalhos</a>
+                <a href="#contato" class="botao">Contato</a>
+            </div>
+        </nav>
+    </header>
+
+    <main id="conteudo-principal">
+        <div id="home" class="imagem-centro">
+            <img src="1710103117812.jpg" alt="Minha Foto"> <!--Insere uma foto minha-->
+        </div>
+
+        <div class="descricao">
+            <h1>Davi Alves Fernandes</h1>
+            <p>Challenges spark growth.</p><!--Cria uma Frase de efeito abaixo de meu nome-->
+        </div>    
+
+        <div class="redes-sociais"> <!--Cria uma classe para duas redes sociais-->
+            <a href="https://github.com/DaviDetroit" target="_blank">GitHub</a>  
+            <a href="https://www.linkedin.com/in/fernandes-davi/" target="_blank">LinkedIn</a> 
+            </div>
+
+        <section id="sobre-mim" class="about-me">
+            <h2>Sobre Mim</h2>
+            <p>Meu nome é Davi Alves Fernandes Ferreira, nasci em 2006 em Nova Lima, e desde pequeno sempre fui apaixonado por jogos, tanto no console quanto no PC. Aos 11 anos, comecei a explorar as diversas possibilidades do computador, o que aumentou ainda mais meu interesse pelo ambiente virtual. Esse fascínio me motivou a estudar programação em banco de dados, com o objetivo de entender como a base de um sistema pode transformar um código em experiências digitais imersivas.
+
+                Atualmente, sou estudante de Banco de Dados com formação em Engenharia de Dados e possuo uma sólida base em técnicas e ferramentas como SQL, Python e modelagem de dados.</p>
+        </section>
+        <section id="trabalhos" class="work">
+            
+            <h2>Mountain Shooter</h2>
+            <p>Durante o meu percurso acadêmico, enfrentei alguns desafios que me impulsionaram a me aperfeiçoar e aprender novas habilidades para superá-los. Um exemplo disso foi o projeto "Mountain Shooter", onde tive a oportunidade de ajustar vários aspectos do jogo. Nesse projeto, editei valores como o dano, a vida e outros parâmetros de um jogo em que o jogador controla uma nave verde e deve atirar contra naves inimigas. Alterei a velocidade dos tiros das naves adversárias para aumentar o grau de dificuldade e criar uma diferença mais marcante entre elas. Além disso, modifiquei a última fase, a fase 3, para torná-la a mais difícil, ajustando as defesas e aumentando o dano dos inimigos, criando uma experiência mais desafiadora para o jogador.</p>
+            <div class="video-container"> <!--Cria uma classe de vídeo-->
+                <video width="100%" controls>
+                    <source src="Video ai.mp4" type="video/mp4">
+                    
+                </video>
+            
+            <p>Contudo, essa experiência me fez perceber o quanto posso evoluir. Embora o projeto "Mountain Shooter" tenha sido desafiador e ainda esteja longe da complexidade de jogos profissionais, ele representou um passo importante na minha jornada. Ele me mostrou que, com dedicação e paciência, é possível transformar ideias simples em experiências divertidas e interessantes.</p>
+        <h2>Youtube</h2>
+        <p>Também possuo um canal no YouTube, onde desenvolvi um trabalho que abordou um tema importante e sensível: a diversidade de comportamentos das pessoas no ambiente da academia. Durante o projeto, percebi como as inseguranças e questões pessoais influenciam o modo como as pessoas se comportam nesse espaço. Para criar conteúdo sobre isso, foi essencial adotar uma abordagem cuidadosa e empática, especialmente porque o tema envolve aspectos delicados da autoestima. Além disso, explorei o impacto das redes sociais na promoção da pressão estética, um assunto pouco discutido, mas que exerce grande influência na percepção que as pessoas têm de seus corpos.</p>
+        <div class="video-container">
+            <video width="100%" controls>
+                <source src="./Cultive bem-estar Pleno .mp4" type="video/mp4">
+            </video>
+        </div>
+        <p>Após finalizar a execução do vídeo, aprendi valiosas lições sobre como abordar a edição de um tema mais sério, algo que eu nunca tinha feito antes, pois até então meus vídeos se limitavam a momentos descontraídos jogando com meus amigos. Essa experiência foi bastante interessante e se tornou um grande aprendizado. Caso tenha interesse, você pode conferir o conteúdo completo do vídeo clicando no link a seguir <a href="https://www.youtube.com/watch?v=CPaJDC7joIU" target="_blank">Assista ao vídeo no YouTube</a>.</p>
+    </section>
+        <section id="contato" class="contact">
+            <h2>Contato</h2>
+            <form class="formulario-contato">
+                <div class="campo">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required> <!-- O campo de entrada para o nome, onde o usuário pode digitar seu nome. -->
+                </div>
+                <div class="campo"> <!-- Novo campo para o e-mail do usuário. -->
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required> <!-- O campo de entrada para o e-mail, onde o usuário pode digitar seu e-mail. -->
+                </div>
+                <div class="campo">
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" placeholder="Digite sua mensagem" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="botao-enviar">Enviar</button>
+            </form>
+        </section>
+        
+    </main>
+
+    
+</body>
+</html>
+
+
+
+
+

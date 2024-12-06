@@ -1,0 +1,388 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0d0d25; 
+    color: #ffffff; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 550vh; /*Altura da tela*/
+}
+
+body {
+    transition: background-color 0.5s ease;
+}
+
+
+
+header {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+
+header nav a {
+    margin-right: 1px;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1px;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+.imagem-centro {
+    margin-bottom: 20px; 
+    position: relative; /* Adicionando position relative */
+    top: -1000px; /* Ajusta o valor para a imagem subir */
+}
+
+.imagem-centro img {
+    width: 300px; /* Muda a largura da imagem*/
+    height: 300px; /*Muda a altura da imagem*/
+    border-radius: 50%;  /* Borda para imagem*/
+    border: 3px solid #ffffff; 
+    object-fit: cover;
+}
+
+
+.links-abaixo {
+    margin-top: 20px;
+}
+
+.links-abaixo a {
+    display: inline-block;
+    margin: 0 15px;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+}
+
+.links-abaixo a:hover {
+    text-decoration: underline;
+}
+main {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    height: calc(100vh - 50px); 
+}
+
+.imagem-centro {
+    margin-bottom: 20px; 
+}
+
+
+
+main {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    height: calc(100vh - 50px); 
+}
+
+.imagem-centro {
+    margin-bottom: 20px; 
+    position: relative; /* Adicionando position relative */
+    top: -25px; /* Sobe a imagem */
+}
+
+
+.descricao {
+    margin-bottom: 20px;
+    position: relative; /* Adicionando position relative */
+    top: -25px; /* Ajusta o valor para a imagem subir */
+}
+
+.descricao {
+    text-align: center;
+}
+
+.descricao h1 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-family: 'Poppins', sans-serif; 
+}
+
+.descricao p {
+    font-size: 25px;
+    font-family: 'Arial', sans-serif;
+    color: transparent; 
+    background-image: linear-gradient(90deg, #ff5733, #33c9ff, #a833ff); 
+    background-clip: text;
+    -webkit-background-clip: text; 
+    transition: background-image 0.5s ease;
+    font-weight: bold; /* Adicionando negrito ao texto */
+}
+
+.descricao p:hover {
+    background-image: linear-gradient(90deg, #33ff57, #ff33c9, #ffcc33); 
+}
+
+
+.botoes-navegacao {
+    display: flex; 
+    gap: 20px; 
+    margin-top: 20px;
+    justify-content: center; 
+    padding-left: 15px;
+}
+
+.botao {
+    text-decoration: none; 
+    color: #ffffff; 
+    background-color: #1a1a40; 
+    border: 2px solid #ffffff; 
+    border-radius: 25px; 
+    padding: 10px 20px; 
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif; 
+    transition: all 0.3s ease; 
+}
+
+
+.botao:hover {
+    background-color: #ffffff; 
+    color: #1a1a40; 
+    border-color: #1a1a40; 
+}
+.botao {
+    cursor: pointer; /* Garante que o cursor seja a mãozinha */
+}
+
+.redes-sociais {
+    position: absolute;
+    top: 585px;
+    right: -550px;
+    display: flex;
+    gap: 15px;
+}
+
+.redes-sociais a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+    font-family: 'Arial', sans-serif;
+    transition: color 0.3s ease; /* Faz uma transição suave de cor*/
+}
+
+.redes-sociais a:hover {
+    color: #2e3061; 
+}
+.redes-sociais {
+    margin-bottom: 20px;
+    position: relative; 
+    top: 2725px; /* Ajusta o valor para a imagem subir */
+}
+.about-me {
+    margin-bottom: 20px;
+    position: relative; 
+    top: 75px; 
+}
+/* Estilo para a seção Sobre Mim */
+.about-me {
+    background-color: #1a1a40;
+    color: white;
+    padding: 30px;
+    margin-top: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 800px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify;
+    line-height: 1.6;
+}
+
+.about-me h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    transition: color 0.3s ease; /* Faz uma transição suave de cor*/
+}
+
+.about-me h2:hover {
+    color: #33c9ff;  /* Mudança de cor do título no hover */
+}
+
+.about-me p {
+    font-size: 18px;
+}
+.about-me {
+    cursor: pointer; /* Garante que o cursor seja a mãozinha */
+}
+
+
+.work {
+    margin-bottom: 20px;
+    position: relative; 
+    top: 75px; 
+}
+
+.work {
+    background-color: #1a1a40;
+    color: white;
+    padding: 30px;
+    margin-top: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 800px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify;
+    line-height: 1.6;
+}
+
+.work h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    transition: color 0.3s ease;
+}
+
+.work h2:hover {
+    color: #33c9ff;  /* Mudança de cor do título no hover */
+}
+
+.work p {
+    font-size: 18px;
+}
+.work {
+    cursor: pointer; 
+}
+
+.video-container {
+    text-align: center; /* Centraliza o vídeo */
+    margin-top: 20px; /* Espaçamento acima do vídeo */
+}
+
+.video-container video {
+    max-width: 50%; /* Ajusta o vídeo para preencher o container */
+    border-radius: 10px; /* Borda arredondada  */
+}
+.formulario-contato {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.formulario-contato {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.contact {
+    margin-bottom: 20px;
+    position: relative; 
+    top: 65px; 
+}
+.contact {
+    background-color: #1a1a40;
+    color: white;
+    padding: 30px;
+    margin-top: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 800px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify;
+    line-height: 1.6;
+}
+.contact h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    transition: color 0.3s ease;
+}
+.contact h2:hover {
+    color: #33c9ff;  /* Mudança de cor do título no hover */
+}
+.contact {
+    cursor: pointer; 
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+}
+
+.campo label {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #ffffff;
+}
+
+.campo input,
+.campo textarea {
+    font-size: 16px;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    background-color: #292952;
+    color: #ffffff;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.campo input:focus,
+.campo textarea:focus {
+    border-color: #33c9ff;
+    box-shadow: 0 0 5px #33c9ff;
+}
+
+textarea {
+    resize: none;
+}
+
+.botao-enviar {
+    align-self: flex-start;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #33c9ff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.botao-enviar:hover {
+    background-color: #1a8ed9;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
